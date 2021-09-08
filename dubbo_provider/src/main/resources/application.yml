@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://8.130.55.112:8022/rainful_mm
+    username: root
+    password: itheima117
+
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: zookeeper
+    timeout: 10000
+  scan:
+    base-packages: link.rainful.service
+  config-center:
+    timeout: 10000
+  provider:
+    timeout: 3000

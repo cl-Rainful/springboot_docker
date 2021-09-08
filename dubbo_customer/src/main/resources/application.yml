@@ -1,0 +1,12 @@
+server:
+  port: 8080
+dubbo:
+  application:
+    name: dubbo_customer
+  registry:
+    address: zookeeper
+    timeout: 10000
+  provider:
+    timeout: 3000
+  config-center:
+    timeout: 3000
